@@ -1,6 +1,44 @@
 
 .header-container {
-    background-color: #212121;
-    height: 8vh;
-    z-index: 9999;
+  background-color: #212121;
+  height: 8vh;
+  z-index: 9999;
+  color: floralwhite;
+  font-family: Rubik;
+  font-size: 1.3rem;
+  padding: 0 0 0 0;
+}
+
+.sm-toolbar {
+  color: floralwhite;
+  background-color: #212121;
+  font-family: Roboto;
+  height: 8vh;
+}
+
+.menu-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+}
+
+
+.menu-btn {
+  color: floralwhite;
+  background-color: #212121;
+  z-index: 9999;
+  width: 100%
+}
+
+.menu-icon {
+  font-size: 1.7rem;
+}
+
+.brand-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
 }

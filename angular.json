@@ -31,7 +31,10 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "allowedCommonJsDependencies": ["flex-layout"]
+            "allowedCommonJsDependencies": [
+              "flex-layout",
+              "@angular/platform-server"
+            ]
           },
           "configurations": {
             "production": {
