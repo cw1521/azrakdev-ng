@@ -1,19 +1,36 @@
-<div class="header-container">
-  <mat-toolbar class="sm-toolbar" fxHide.gt-sm fxShow>
-    <div class="menu-btn-container">
-      <button class="material-icons menu-btn" mat-icon-button>
-        <mat-icon class="menu-icon">menu</mat-icon>
-      </button>
-    </div>
-    <div class="brand-container">
-      <span>AzrakDev</span>
-    </div>
-  </mat-toolbar>
-
-
-
+<div class="header-container" fxLayout="row" fxHide.gt-xs>
+  <div fxFlex="100" fxFlexFill>
+    <mat-toolbar class="toolbar" >
+      <div class="menu-btn-container" fxFlex="15">
+        <button class="material-icons menu-btn" mat-icon-button>
+          <mat-icon class="menu-icon">menu</mat-icon>
+        </button>
+      </div>
+      <div class="xs-brand-container" fxFlex="70">
+        <span>AzrakDev</span>
+      </div>
+      <div class="toolbar-spacer"></div>
+    </mat-toolbar>
+  </div>
 </div>
 
+
+
+<div class="header-container" fxLayout="row" fxLayoutAlign="center center" fxHide.xs>
+  <div fxFlex="100">
+    <mat-toolbar class="toolbar">
+      <div class="brand-container" fxFlex="20">
+        <button class="link-btn banner-text" mat-button>AzrakDev</button>
+      </div>
+      <div class="link-btn-container" fxFlex="8" fxFlexFill>
+        <button class="link-btn  btn-text" mat-button>Home</button>
+      </div>
+      <div class="link-btn-container" fxFlex="8" fxFlexFill>
+        <button class="link-btn btn-text" mat-button>Projects</button>
+      </div>
+    </mat-toolbar>
+  </div>
+</div>
 
 
 

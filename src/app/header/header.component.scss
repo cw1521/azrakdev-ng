@@ -1,19 +1,18 @@
 
 .header-container {
-  background-color: #212121;
-  height: 8vh;
+  background-image: linear-gradient(to bottom right, rgb(0, 21, 23), rgba(0, 21, 23, 0.8));
+  height: 10vh;
   z-index: 9999;
   color: floralwhite;
-  font-family: Rubik;
   font-size: 1.3rem;
   padding: 0 0 0 0;
+  width: 100%;
 }
 
-.sm-toolbar {
+.toolbar {
   color: floralwhite;
-  background-color: #212121;
-  font-family: Roboto;
-  height: 8vh;
+  height: 100%;
+  background-color: rgba(0, 21, 23, 0);
 }
 
 .menu-btn-container {
@@ -27,18 +26,52 @@
 
 .menu-btn {
   color: floralwhite;
-  background-color: #212121;
+  background-color: rgba(0, 21, 23, 0);
   z-index: 9999;
-  width: 100%
+  width: 100%;
+
 }
 
 .menu-icon {
   font-size: 1.7rem;
+  background-color: rgba(0, 21, 23, 0);
 }
 
-.brand-container {
+.xs-brand-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70%;
+  background-color: rgba(0, 21, 23, 0);
+}
+
+
+.toolbar-spacer {
+  width: 15%;
+}
+
+.banner-text {
+  font-size: 2.5vw;
+}
+
+.link-btn {
+  height: 100%;
+  width:100%;
+}
+
+.btn-text {
+  font-size: 1.5vw;
+}
+
+.link-btn-container {
+  padding: 0 2vh 0 2vh;
+  width: 100%;
+  height: 100%;
+}
+
+
+.brand-container {
+  padding: 1vh 1vh 1vh 1vh;
+  border-right: 0.3vh solid rgba(0, 21, 23, 0.6);
+  margin: 0 !important;
 }

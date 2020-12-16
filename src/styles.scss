@@ -27,23 +27,27 @@ $azrakdev-theme: mat-light-theme((
   )
 ));
 
+$azrakdev-typography: mat-typography-config(
+  $font-family: 'Ubuntu, sans-serif'
+);
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($azrakdev-theme);
 
-/* You can add global styles to this file, and also import other style files */
+@include angular-material-typography($azrakdev-typography);
 
-body {
-  margin: 0;
-}
+/* You can add global styles to this file, and also import other style files */
 
 
 html, body {
   height: 100%;
+  /*font-family: 'Ubuntu', sans-serif;*/
+ /* font-family: 'Cormorant Garamond', serif;*/
 }
 
 body {
   margin: 0;
-  font-family: Rubik, Roboto, sans-serif;
+
 }

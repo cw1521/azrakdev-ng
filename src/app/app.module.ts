@@ -10,7 +10,8 @@ import {HomeComponent} from './home/home.component';
 import {MaterialModule} from './material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import {FlexLayoutServerModule} from '@angular/flex-layout/server';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,13 @@ import {FlexLayoutServerModule} from '@angular/flex-layout/server';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    FlexLayoutServerModule
+    FontAwesomeModule
 
   ],
   providers: [
     MaterialModule,
     FlexLayoutModule,
-    FlexLayoutServerModule
+    FontAwesomeModule
   ],
   bootstrap: [AppComponent]
 })
