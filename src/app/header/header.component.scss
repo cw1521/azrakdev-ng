@@ -23,7 +23,6 @@
   width: 15%;
 }
 
-
 .menu-btn {
   color: floralwhite;
   background-color: rgba(0, 21, 23, 0);
@@ -45,13 +44,20 @@
   background-color: rgba(0, 21, 23, 0);
 }
 
-
 .toolbar-spacer {
   width: 15%;
 }
 
+.banner-text-sm {
+  font-size: 2rem;
+}
+
 .banner-text {
-  font-size: 2.5vw;
+  font-size: 2rem;
+}
+
+.banner-text-lg {
+  font-size: 2rem;
 }
 
 .link-btn {
@@ -60,7 +66,16 @@
 }
 
 .btn-text {
-  font-size: 1.5vw;
+  font-size: 1.2rem;
+
+}
+
+.btn-text-sm {
+  font-size: 1rem;
+}
+
+.btn-text-lg {
+  font-size: 1.4rem;
 }
 
 .link-btn-container {
@@ -69,9 +84,12 @@
   height: 100%;
 }
 
-
 .brand-container {
   padding: 1vh 1vh 1vh 1vh;
   border-right: 0.3vh solid rgba(0, 21, 23, 0.6);
   margin: 0 !important;
+}
+
+.mat-button-disabled {
+  color: rgb(200, 200, 200) !important;
 }

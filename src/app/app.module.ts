@@ -12,13 +12,17 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProjectComponent } from './project/project.component';
+import { AI2048Component } from './ai2048/ai2048.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectComponent,
+    AI2048Component
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
