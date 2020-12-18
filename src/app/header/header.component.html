@@ -1,27 +1,31 @@
+
+<!--// Xs viewport-->
 <div class="header-container" fxLayout="row" fxHide.gt-xs>
   <div fxFlex="100" fxFlexFill>
     <mat-toolbar class="toolbar" >
       <div class="menu-btn-container" fxFlex="15">
-        <button class="material-icons menu-btn" mat-icon-button>
+        <button class="material-icons menu-btn" mat-icon-button [matMenuTriggerFor]="menu">
           <mat-icon class="menu-icon">menu</mat-icon>
         </button>
       </div>
       <div class="xs-brand-container" fxFlex="70">
-        <span>AzrakDev</span>
+        <a [routerLink]="['/']"><button class="link-btn banner-text-sm" mat-button>AzrakDev</button></a>
       </div>
       <div class="toolbar-spacer"></div>
     </mat-toolbar>
   </div>
 </div>
 
+
+<!--// Small viewport-->
 <div class="header-container" fxLayout="row" fxLayoutAlign="center center" fxHide.xs fxHide.gt-sm>
   <div fxFlex="100">
     <mat-toolbar class="toolbar">
-      <div class="brand-container" fxFlex="35">
-        <button class="link-btn banner-text-sm" mat-button>AzrakDev</button>
+      <div class="brand-container" fxFlex="30">
+        <a [routerLink]="['/']"><button class="link-btn banner-text-sm" mat-button>AzrakDev</button></a>
       </div>
       <div class="link-btn-container" fxFlex="12.5" fxFlexFill>
-        <button class="link-btn btn-text-sm" mat-button>Home</button>
+        <a [routerLink]="['/']"><button class="link-btn btn-text-sm" mat-button>Home</button></a>
       </div>
       <div class="link-btn-container" fxFlex="12.5" fxFlexFill>
         <button class="link-btn btn-text-sm" mat-button disabled>Projects</button>
@@ -30,14 +34,16 @@
   </div>
 </div>
 
+
+<!--// Md viewport-->
 <div class="header-container" fxLayout="row" fxLayoutAlign="center center" fxHide.lt-md fxHide.gt-md>
   <div fxFlex="100">
     <mat-toolbar class="toolbar">
-      <div class="brand-container" fxFlex="30">
-        <button class="link-btn banner-text" mat-button>AzrakDev</button>
+      <div class="brand-container" fxFlex="25">
+        <a [routerLink]="['/']"><button class="link-btn banner-text" mat-button>AzrakDev</button></a>
       </div>
       <div class="link-btn-container" fxFlex="10" fxFlexFill>
-        <button class="link-btn btn-text" mat-button>Home</button>
+        <a [routerLink]="['/']"><button class="link-btn btn-text" mat-button>Home</button></a>
       </div>
       <div class="link-btn-container" fxFlex="10" fxFlexFill>
         <button class="link-btn btn-text" mat-button disabled>Projects</button>
@@ -47,14 +53,15 @@
 </div>
 
 
+<!--// Lg viewport-->
 <div class="header-container" fxLayout="row" fxLayoutAlign="center center" fxHide.lt-lg>
   <div fxFlex="100">
     <mat-toolbar class="toolbar">
       <div class="brand-container" fxFlex="20">
-        <button class="link-btn banner-text-lg" mat-button>AzrakDev</button>
+        <a [routerLink]="['/']"><button class="link-btn banner-text-lg" mat-button>AzrakDev</button></a>
       </div>
       <div class="link-btn-container" fxFlex="10" fxFlexFill>
-        <button class="link-btn btn-text-lg" mat-button>Home</button>
+        <a [routerLink]="['/']"><button class="link-btn btn-text-lg" mat-button>Home</button></a>
       </div>
       <div class="link-btn-container" fxFlex="10" fxFlexFill>
         <button class="link-btn btn-text-lg" mat-button disabled>Projects</button>
@@ -64,3 +71,12 @@
 </div>
 
 
+<!--// Xs menu dropdown-->
+<mat-menu class="menu-container" #menu="matMenu">
+  <div mat-menu-item>
+    <a [routerLink]="['/']"><button mat-button>Home</button></a>
+  </div>
+  <div mat-menu-item>
+    <button mat-button disabled>Projects</button>
+  </div>
+</mat-menu>

@@ -49,11 +49,11 @@
 }
 
 .banner-text-sm {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .banner-text {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 .banner-text-lg {
@@ -65,17 +65,17 @@
   width:100%;
 }
 
-.btn-text {
-  font-size: 1.2rem;
-
-}
 
 .btn-text-sm {
   font-size: 1rem;
 }
 
+.btn-text {
+  font-size: 1.1rem;
+}
+
 .btn-text-lg {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .link-btn-container {
@@ -90,6 +90,22 @@
   margin: 0 !important;
 }
 
-.mat-button-disabled {
+::ng-deep .mat-button-disabled {
   color: rgb(200, 200, 200) !important;
+}
+
+::ng-deep .menu-container {
+  background-image: linear-gradient(to bottom right, rgb(0, 21, 23), rgba(0, 21, 23, 0.8)) !important;
+}
+
+.mat-menu-item {
+  color: floralwhite !important;
+}
+
+.mat-menu-item > mat-button-disabled {
+  color: rgb(200, 200, 200) !important;
+}
+
+a {
+  color: floralwhite;
 }
