@@ -1,7 +1,7 @@
 .footer-container {
   height: 7vh;
   z-index: 9999;
-  background-image: linear-gradient(to bottom right, rgb(0, 21, 23), rgba(0, 21, 23, 0.8));
+  background-image: linear-gradient(to bottom right, $primary-color, rgba($primary-color, 0.8));
   color: rgb(244, 244, 244);
 }
 

@@ -28,7 +28,7 @@
         <a [routerLink]="['/']"><button class="link-btn btn-text-sm" mat-button>Home</button></a>
       </div>
       <div class="link-btn-container" fxFlex="12.5" fxFlexFill>
-        <button class="link-btn btn-text-sm" mat-button disabled>Projects</button>
+        <a [routerLink]="['project']"><button class="link-btn btn-text-sm" mat-button>Projects</button></a>
       </div>
     </mat-toolbar>
   </div>
@@ -46,7 +46,7 @@
         <a [routerLink]="['/']"><button class="link-btn btn-text" mat-button>Home</button></a>
       </div>
       <div class="link-btn-container" fxFlex="10" fxFlexFill>
-        <button class="link-btn btn-text" mat-button disabled>Projects</button>
+        <a [routerLink]="['project']"><button class="link-btn btn-text" mat-button>Projects</button></a>
       </div>
     </mat-toolbar>
   </div>
@@ -64,7 +64,7 @@
         <a [routerLink]="['/']"><button class="link-btn btn-text-lg" mat-button>Home</button></a>
       </div>
       <div class="link-btn-container" fxFlex="10" fxFlexFill>
-        <button class="link-btn btn-text-lg" mat-button disabled>Projects</button>
+        <a [routerLink]="['project']"><button class="link-btn btn-text-lg" mat-button>Projects</button></a>
       </div>
     </mat-toolbar>
   </div>
@@ -77,6 +77,6 @@
     <a [routerLink]="['/']"><button mat-button>Home</button></a>
   </div>
   <div mat-menu-item>
-    <button mat-button disabled>Projects</button>
+    <a [routerLink]="['project']"><button mat-button>Projects</button></a>
   </div>
 </mat-menu>

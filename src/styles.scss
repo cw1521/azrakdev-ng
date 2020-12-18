@@ -40,11 +40,26 @@ $azrakdev-typography: mat-typography-config(
 
 /* You can add global styles to this file, and also import other style files */
 
+$page-background: rgba(211, 211, 211, 0.4);
+$page-height: 83vh;
+$primary-color: rgb(0, 21, 23);
+$accent-color: rgb(0, 50, 54);
+
+$primary-font-color: floralwhite;
+
+
+
+
+
+.page-container {
+  min-width: 100vw;
+  min-height: $page-height;
+  background-color: $page-background;
+}
+
 
 html, body {
   height: 100%;
-  /*font-family: 'Ubuntu', sans-serif;*/
- /* font-family: 'Cormorant Garamond', serif;*/
 }
 
 body {

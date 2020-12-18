@@ -1,18 +1,19 @@
+@import "../../styles.scss";
 
 .header-container {
-  background-image: linear-gradient(to bottom right, rgb(0, 21, 23), rgba(0, 21, 23, 0.8));
+  background-image: linear-gradient(to bottom right, $primary-color, rgba($primary-color, 0.8));
   height: 10vh;
   z-index: 9999;
-  color: floralwhite;
+  color: $primary-font-color;
   font-size: 1.3rem;
   padding: 0 0 0 0;
   width: 100%;
 }
 
 .toolbar {
-  color: floralwhite;
+  color: $primary-font-color;
   height: 100%;
-  background-color: rgba(0, 21, 23, 0);
+  background-color: rgba($primary-color, 0);
 }
 
 .menu-btn-container {
@@ -24,8 +25,8 @@
 }
 
 .menu-btn {
-  color: floralwhite;
-  background-color: rgba(0, 21, 23, 0);
+  color: $primary-font-color;
+  background-color: rgba($primary-color, 0);
   z-index: 9999;
   width: 100%;
 
@@ -33,7 +34,7 @@
 
 .menu-icon {
   font-size: 1.7rem;
-  background-color: rgba(0, 21, 23, 0);
+  background-color: rgba($primary-color, 0);
 }
 
 .xs-brand-container {
@@ -41,7 +42,7 @@
   justify-content: center;
   align-items: center;
   width: 70%;
-  background-color: rgba(0, 21, 23, 0);
+  background-color: rgba($primary-color, 0);
 }
 
 .toolbar-spacer {
@@ -86,7 +87,7 @@
 
 .brand-container {
   padding: 1vh 1vh 1vh 1vh;
-  border-right: 0.3vh solid rgba(0, 21, 23, 0.6);
+  border-right: 0.3vh solid rgba($primary-color, 0.6);
   margin: 0 !important;
 }
 
@@ -95,11 +96,11 @@
 }
 
 ::ng-deep .menu-container {
-  background-image: linear-gradient(to bottom right, rgb(0, 21, 23), rgba(0, 21, 23, 0.8)) !important;
+  background-image: linear-gradient(to bottom right, $primary-color, rgba($primary-color, 0.8)) !important;
 }
 
 .mat-menu-item {
-  color: floralwhite !important;
+  color: $primary-font-color !important;
 }
 
 .mat-menu-item > mat-button-disabled {
@@ -107,5 +108,5 @@
 }
 
 a {
-  color: floralwhite;
+  color: $primary-font-color;
 }
