@@ -1,11 +1,18 @@
 
 <div class="home-container" fxFlex="100" fxLayout="column" fxLayoutAlign="center center">
     <div class="fa-container" fxFlex fxLayoutAlign="center start">
-      <div class="elem-container" fxFlex>
+      <div class="elem-container" fxFlex fxHide.xs>
         <h1 class="h1-text">Site under Construction</h1>
         <br/>
         <br/>
         <fa-icon class="md-light" [icon]="faFileCode"></fa-icon>
+      </div>
+
+      <div class="elem-container-xs" fxFlex fxHide.gt-xs>
+        <h1 class="h1-text">Site under Construction</h1>
+        <br/>
+        <br/>
+        <fa-icon class="md-light-xs" [icon]="faFileCode"></fa-icon>
       </div>
     </div>
 </div>
